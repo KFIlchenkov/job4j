@@ -49,7 +49,7 @@ public class CalculatorTest {
      * Test multip.
      */
     @Test
-    public void whenTwoMultipTwoThenFour(){
+    public void whenTwoMultipTwoThenFour() {
         Calculator calc  = new Calculator();
         calc.multip(2D, 2D);
         double result = calc.getResult();

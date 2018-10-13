@@ -26,7 +26,7 @@ public class Calculator {
      * @param second - second.
      */
     public void div(double first, double second) {
-        this.result = first/second;
+        this.result = first / second;
     }
     /**
      * Sub.
