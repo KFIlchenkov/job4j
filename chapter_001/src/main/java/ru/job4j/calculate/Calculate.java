@@ -2,7 +2,7 @@ package ru.job4j.calculate;
 /**
 *Calculate
 *
-@author Konstantin Filchenkov (filchenkov86@gmail.com)
+*@author Konstantin Filchenkov (filchenkov86@gmail.com)
 *@version $Id$
 *@since 11.10.2108
 */
