@@ -15,8 +15,7 @@ public class Converter {
      * @return euro - euro.
      */
     public int rubToEuro(int value) {
-        int euro = value / 70;
-        return euro;
+        return value / 70;
     }
 
     /**
@@ -26,8 +25,7 @@ public class Converter {
      * @return dollar - dollar.
      */
     public int rubToDollar(int value) {
-        int dollar = value / 65;
-        return dollar;
+        return value / 65;
     }
     /**
      * DollarToRub
@@ -36,8 +34,7 @@ public class Converter {
      * @return rub - rub.
      */
     public int dollarToRub(int value) {
-        int rub = value * 65;
-        return rub;
+        return value * 65;
     }
     /**
      * EuroToRub.
@@ -46,7 +43,6 @@ public class Converter {
      * @return rub - rub.
      */
     public int euroToRub(int value) {
-        int rub = value * 70;
-        return rub;
+        return value * 70;
     }
 }
