@@ -1,4 +1,4 @@
-package ru.job4j.conditon;
+package ru.job4j.condition;
 
 /**
  * Class Point to calculate distance.
