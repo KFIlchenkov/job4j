@@ -14,7 +14,12 @@ public class Max {
      * @return maximum.
      */
 
-       public int muximum(int first, int second) {
+    public int max(int first, int second) {
         return first > second ? first : second;
     }
+    public int max(int first, int second, int third) {
+        return Math.max(max(first, second), max(second, third));
+
+    }
+
 }

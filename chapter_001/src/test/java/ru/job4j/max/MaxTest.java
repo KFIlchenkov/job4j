@@ -1,4 +1,4 @@
-package ru.job4j.ru.job4j.max;
+package ru.job4j.max;
 import org.junit.Test;
 import ru.job4j.max.Max;
 
@@ -19,7 +19,16 @@ public class MaxTest {
     @Test
     public void whenOneTwoThanTwo() {
         Max max = new Max();
-        int result = max.muximum(1, 2);
+        int result = max.max(1, 2);
         assertThat(result, is(2));
+    }
+    /**
+     * Test max
+     */
+    @Test
+    public void whenOneTwoTreeThanThree() {
+        Max max = new Max();
+        int result = max.max(1, 2, 3);
+        assertThat(result, is(3));
     }
 }
