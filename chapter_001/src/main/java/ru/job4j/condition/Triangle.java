@@ -36,14 +36,14 @@ public class Triangle {
         double bc = this.b.distanceTo(this.c);
         double ca = this.c.distanceTo(this.a);
         double p = this.period(ab, bc, ca);
-        if (this.exist(ab, ca)) {
+        if (this.exist(ab, bc, ca)) {
            rsl = Math.sqrt(p * (p - ab) * (p - bc) * (p - ca));
         }
         return rsl;
     }
 
-    private boolean exist(double ab, double ca) {
-        return ab != 0 & ca != 0;
+    private boolean exist(double ab, double ca, double bc) {
+        return ab + bc > ca || ab + ca > bc || bc + ca > ab;
         }
 
 }

@@ -18,7 +18,7 @@ public class Max {
         return first > second ? first : second;
     }
     public int max(int first, int second, int third) {
-        return Math.max(max(first, second), max(second, third));
+        return max(max(first, second), third);
 
     }
 

@@ -28,7 +28,7 @@ public class MaxTest {
     @Test
     public void whenOneTwoTreeThanThree() {
         Max max = new Max();
-        int result = max.max(1, 2, 3);
-        assertThat(result, is(3));
+        int result = max.max(156, 22, 3);
+        assertThat(result, is(156));
     }
 }
