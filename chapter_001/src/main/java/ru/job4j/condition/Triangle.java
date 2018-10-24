@@ -43,7 +43,7 @@ public class Triangle {
     }
 
     private boolean exist(double ab, double ca, double bc) {
-        return ab + bc > ca || ab + ca > bc || bc + ca > ab;
+        return ab + bc > ca && ab + ca > bc && bc + ca > ab;
         }
 
 }
