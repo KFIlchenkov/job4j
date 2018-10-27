@@ -9,8 +9,8 @@ package ru.job4j.array;
 public class Check {
     /**
      * method to check massive with the same value.
-     * @param data - input massive
-     * @return -
+     * @param data - input massive.
+     * @return - check result.
      */
     public boolean mono(boolean[] data) {
         boolean result = true;
