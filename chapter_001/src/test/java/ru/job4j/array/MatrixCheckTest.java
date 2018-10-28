@@ -41,4 +41,20 @@ public class MatrixCheckTest {
         boolean result = check.mono(input);
         assertThat(result, is(false));
     }
+
+    /**
+     * test mono
+     */
+    @Test
+    public void whenDataMonoByTrueThenTrueOtherLine() {
+        MatrixCheck check = new MatrixCheck();
+        boolean[][] input = new boolean[][] {
+                {true, true, true},
+                {false, true, true},
+                {false, false, true}
+        };
+        boolean result = check.mono(input);
+        assertThat(result, is(false));
+    }
+
 }
