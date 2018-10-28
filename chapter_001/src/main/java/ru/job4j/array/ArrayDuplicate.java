@@ -1,5 +1,7 @@
 package ru.job4j.array;
 
+import java.util.Arrays;
+
 /**
  * ArrayDublicate - to find out the same elements of array.
  * @author Konstantin Filchenkov.
@@ -9,18 +11,21 @@ package ru.job4j.array;
 
 public class ArrayDuplicate {
     public String[] remove(String[] array) {
+        int count = 0;
         for (int i = 0; i < array.length - 1; i++) {
-            for (int b = 1; b < array.length;) {
-                if (b > i) {
-                    if (array[i].equals(array[i + 1])) {
-                        int c = 0;
-                        c++;
-                    }
-
+            for (int b = array.length - 1; b > i; b--) {
+                if (array[i].equals(array[b])) {
+                    array[b] = "find" + count;
+                    String temp = array[array.length - 1 - count];
+                    array[array.length - 1 - count] = array[b];
+                    array[b] = temp;
+                    count++;
                 }
             }
         }
-        return array;
+        return Arrays.copyOf(array, array.length - count);
     }
 
 }
+
+
